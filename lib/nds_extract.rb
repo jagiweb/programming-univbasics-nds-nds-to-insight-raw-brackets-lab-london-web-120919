@@ -10,13 +10,21 @@ def directors_totals(nds)
   result = {}
   i = 0
   while i < nds.length do
+<<<<<<< HEAD
     new_key = nds[i][:name]
+=======
+    result = nds[i][:name]
+>>>>>>> bec1eb5b228a4e9c72a5aaba62ce7001dbd7a832
     y = 0
     while y < nds[i][:movies].length do
       total += nds[i][:movies][y][:worldwide_gross]
       y += 1
     end
+<<<<<<< HEAD
     result[new_key] = total
+=======
+    result[i][:name] = total
+>>>>>>> bec1eb5b228a4e9c72a5aaba62ce7001dbd7a832
     i += 1
     total = 0
   end
